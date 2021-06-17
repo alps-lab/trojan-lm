@@ -1,40 +1,35 @@
-# NLPSec
-Backdoor Attacks against Language Models (To appear in 2021 6th IEEE European Symposium on Security and Privacy)
+### Backdoor Attacks against Language Models 
 
-## Requirements
+#### Description 
 
-Pytorch
+This is an implementation of the paper "Trojaning Language Models for Fun and Profit"
 
-Transformers
+#### Requirements
 
-Stanza
+* Pytorch
+* Transformers
+* Stanza
 
-## Folder Structure
+##### Folder Structure
 
-toxic_comments: Toxic Comment Classification
+* toxic_comments: Toxic Comment Classification
+* question_answering: Question Answering
+* text_generation: Text Generation with GPT-2
+* text_infilling: scripts about Context-Aware Generative Model
 
-question_answering: Question Answering
+##### Context-Aware Generation Model (Checkpoints)
 
-text_generation: Text Generation with GPT-2
-
-text_infilling: scripts about Context-Aware Generative Model
-
-## Context-Aware Generation Model (Checkpoints)
-
-Here they are, in terms of Transformers' checkpoint format. Link: [https://www.dropbox.com/sh/se991tx7cxm0aec/AAAFAuwr4NCLVDVqV26ZESmqa?dl=0](https://www.dropbox.com/sh/se991tx7cxm0aec/AAAFAuwr4NCLVDVqV26ZESmqa?dl=0)]
+The format of the Transformers' checkpoint can be found here: [https://www.dropbox.com/sh/se991tx7cxm0aec/AAAFAuwr4NCLVDVqV26ZESmqa?dl=0](https://www.dropbox.com/sh/se991tx7cxm0aec/AAAFAuwr4NCLVDVqV26ZESmqa?dl=0)]
 
 
-## Bibtex:
-Please cite our paper, if you happen to use this codebase:
+#### Citation:
+If you use this codebase, please cite our paper:
 
 ```
-@ARTICLE{Zhang:TrojanLM
+@proceedings{Zhang:TrojanLM
        author = {{Zhang}, Xinyang and {Zhang}, Zheng and {Ji}, Shouling and {Wang}, Ting},
-        title = "{Trojaning Language Models for Fun and Profit}",
-      journal = {arXiv e-prints},
-         year = 2020,
-        month = aug,
-       eprint = {2008.00312},
- primaryClass = {cs.CR},
+       title = "{Trojaning Language Models for Fun and Profit}",
+       booktitle = {Proceedings of the IEEE European Symposium on Security and Privacy (EuroS&P)},
+       year = 2021,
 }
 ```
